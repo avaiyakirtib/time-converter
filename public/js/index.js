@@ -4,7 +4,7 @@ async function getSearch() {
   let listInnerHTML = `<select id='list'>`;
   listInnerHTML += "<option selected value=''> Select the city</option>";
   const response = await fetch(
-    `http://192.168.1.7:4600/search/?search=${search}`
+    `https://time-converter-lo53.onrender.com/search/?search=${search}`
   );
   const data = await response.json();
   // data.forEach(e => {
