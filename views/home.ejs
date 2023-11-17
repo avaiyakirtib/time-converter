@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time convert</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone.min.js"></script>
+    <style>
+      .box {
+        width: 1000px;
+        /* height: 200px; */
+        background-color: antiquewhite;
+        padding: 10px 0;
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+      .main {
+        width: auto;
+        height: auto;
+        /* background-color: black; */
+        display: flex;
+        justify-content: center;
+      }
+      .time-date {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cityname {
+        width: 70%;
+        height: auto;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+      }
+      .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+      }
+      .search #search {
+        background-color: antiquewhite;
+        width: 230px;
+        height: 37px;
+        border: black;
+        border-radius: 10px;
+        outline-style: none;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .search .select select{
+        width: auto;
+        height: 37px;
+        border-radius: 10px;
+      }
+      /* .search .select select *{
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="search">
+      <div style="width: 50%; text-align: right">
+        <input id="search" onkeyup="getSearch()" placeholder="Search city"/>
+      </div>
+      <!-- <select class="options-list" id="list"></select> -->
+      <div class="select" id="select" style="width: 50%; text-align: left; padding-left: 10px;">
+        
+      </div>
+    </div>
+
+    <div class="main">
+      <div id="mainDiv">
+        
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>
