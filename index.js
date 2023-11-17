@@ -107,4 +107,4 @@ server.post("/time/convert", async (req, res) => {
   }
 });
 
-server.listen(PORT, "192.168.1.7");
+server.listen(PORT);
